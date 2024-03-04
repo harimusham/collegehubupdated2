@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement_Home_Page</title>
+        <style>
+            img.sticky
+            {
+               position: sticky;
+               top: 0;
+               width:100%;
+            }
+           img
+           {
+               border:2px solid black;
+               border-radius:10px;
+               margin-bottom:10px;
+           }
+           .abc
+           {
+               margin-top:50px;
+               width:30%;
+               display:inline-block;
+               box-sizing:border-box;
+               position:relative;
+               max-height:620px;
+               left:0px;
+               border:4px solid black;
+               
+               color:white;
+               bottom:40px;
+               box-shadow: 5px 10px 8px 10px #888888;
+   
+           }
+        
+          
+          
+           
+       
+           .custom-flex {
+               display: flex;
+       
+               gap: 8rem;
+           }
+           td
+           {
+             
+               font-weight:bold;
+           }
+           td
+           {
+               color:brown;
+           }
+         
+           span
+           {
+               color:blue;
+               text-decoration:uppercase;
+               text-decoration: underline;
+               font-style:italic;
+           }
+           #pp:hover
+           {
+               background-color:lightblue;
+               text-decoration:underline;
+               color:brown;
+               font-size:23px;
+           }
+           .vl
+           {
+               border:3px solid black;
+               height:2000px;
+           }
+           .dss
+           {
+                display:flex;
+           }
+           .dss
+           {
+                border:2px solid black;
+                position:relative;
+                left:100px;
+           }
+           .isalldepartments
+           {
+            border:2px solid black;
+            width:1050px;
+            height:500px;
+            display:flex;
+            gap:50px;
+            flex-wrap: wrap;
+          
+            margin-top:10px;
+            flex-direction: center;
+            padding: 15px 20px;
+           }
+           .edeprt
+           {
+            width:300px;
+            height:200px;
+            border:1px solid black;
+            text-align:center;
+            border-radius:20px;
+          
+           }
+           .edeprtl
+           {
+            width:300px;
+            height:200px;
+            border:1px solid black;
+            text-align:center;
+            border-radius:20px;
+            
+           }
+           #dname
+           {
+            text-decoration:none;
+            font-weight:bold;
+            text-transform:uppercase;
+            position:relative;
+            top:60px;
+            color:black;
+           
+           
+           }
+           .logout
+           {
+            position: absolute;
+            right:5px;
+            top:135px;
+            color:black;
+            font-weight: bold;
+            border:2px solid black;
+            padding:5px;
+            font-size: 20px;
+            border-radius:10px;
+           }
+           .logout:hover
+           {
+            background-color:black;
+            color:white;
+            font-weight: bold;
+           }
+           .PComplaints
+           {
+                border:2px solid black;
+                padding-left:80px;
+                gap:50px;
+                padding-top:30px;
+              
+           }
+           .card
+           {
+            border:2px solid black;
+           }
+           .edssmain
+           {
+            border:2px solid black;
+            width:850px;
+            padding:30px;
+           }
+           .eachstudent
+           {
+             border:2px solid black;
+           }
+
+           .addjobs {
+            width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position:relative;
+            right:80px;
+            bottom:40px;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+        #jemail
+        {
+            position:relative;
+            left:50px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            position:relative;
+            left:10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+            
+        #alumniForm {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            position:relative;
+            left:120px;
+            top:10px;
+        }
+        
+        #alumniForm label {
+            font-weight: bold;
+        }
+        
+        #alumniForm input[type="text"],
+        #alumniForm input[type="url"],
+        #alumniForm textarea,
+        #alumniForm input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        
+        #alumniForm input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .addjobs input[type="submit"]{
+            left:50px;
+        }
+        
+        #alumniForm input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .jemails
+        {
+            position:relative;
+            right:100px;
+        }
+        .jobpositions
+        {
+            position:relative;
+            right:40px;
+        }
+        .urls{
+            position:relative;
+            right:120px;
+        }
+        .locations
+        {
+            position:relative;
+            right:80px;
+
+        }
+        .requriments
+        {
+            position:relative;
+            right:40px;
+        }
+        .submits
+        {
+            position:relative;
+            right:180px;
+
+        }
+        body
+        {
+            background-color: #007bff;
+        }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img src="static/sreyasheader.jpg"  width="100%" height="130px" class="sticky">
+</div>
+<div class="logouts">
+
+    <a class="logout" href="{{ url_for('logout')}}">LogOut</a>  
+</div>
+<h4>Welcome.....{{tpusername}}</h4>
+    <hr style="height:5px;border-width:5px;color:black;background-color:black;">
+    <div class="custom-flex">
+        <div class="list-group mb-4 abc border border-3  rounded stuclass">
+            <div  class="button_cont">
+                <a id="pp"  href="{{ url_for('alldepartments',tpusername=tpusername) }}" class="list-group-item list-group-item-action border border-5 rounded bg-opacity-75 example_f"><img width="39" height="39" src="https://img.icons8.com/ios/50/user-menu-male.png" alt="user-menu-male"/>Students_Profile</a>
+            </div>
+            <div  class="button_cont">
+                <a  id="ssmarks"  href="{{ url_for('getplcomplaints',tpusername=tpusername) }}" class="list-group-item list-group-item-action border border-5 rounded bg-opacity-75 example_f"><img width="39" height="39" src="https://img.icons8.com/ios/50/report-card.png" alt="report-card"/>SEE_COMPLAINTS</a>
+            </div> 
+            <div>
+                <a  id="pp" href="{{url_for('get_spec_students')}}" class="list-group-item list-group-item-action border border-5 rounded bg-opacity-75 example_f"><img width="39" height="39" src="https://img.icons8.com/dotty/80/attendance-mark.png" alt="attendance-mark"/>SearchStudents</a>
+            </div>
+            
+            <div>
+                <a   id="pp" href="{{url_for('add_jobs')}}" class="list-group-item list-group-item-action border border-5 rounded  p-2 text-dark bg-opacity-75  example_f"><img  class="car" width="39" height="39" src="https://img.icons8.com/dotty/80/personal-growth.png" alt="personal-growth"/>ADD_JOB BOARD</a>
+            </div>
+            <div>
+                <a  id="pp" href="{{url_for('view_alumini')}}"  class="list-group-item list-group-item-action border border-5 rounded bg-opacity-75 example_f"><img width="39" height="39" src="https://img.icons8.com/ios-filled/50/task.png" alt="task"/>ALUMINI-STUDENTS</a>
+            </div>
+        </div>
+            
+            
+            {% if is_dstp %}
+                <div class="dss">
+                    <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                        {% for dsres in dsresultss %}
+                        <div   class="card" style="width:25%; margin: 40px;">
+                            <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                            <div class="card-body" id="card-bodys">
+                                <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                                <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                                    <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                                    <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                                    <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                                    <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                                    <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                                    <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                                    <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                                    <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                                    <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                                    <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                                </ul>
+                                <hr>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+              
+            {% if is_ecetp %}
+                <div class="dss">
+                    <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                        {% for dsres in eceresultss %}
+                        <div   class="card" style="width:25%; margin: 40px;">
+                            <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                            <div class="card-body" id="card-bodys">
+                                <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                                <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                                    <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                                    <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                                    <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                                    <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                                    <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                                    <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                                    <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                                    <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                                    <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                                    <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                                </ul>
+                                <hr>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if is_aimltp %}
+            <div class="dss">
+                <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                    {% for dsres in aimlresultss %}
+                    <div   class="card" style="width:25%; margin: 40px;">
+                        <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                        <div class="card-body" id="card-bodys">
+                            <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                            <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                                <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                                <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                                <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                                <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                                <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                                <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                                <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                                <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if is_civiltp %}
+            <div class="dss">
+                <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                    {% for dsres in civilresultss %}
+                    <div   class="card" style="width:25%; margin: 40px;">
+                        <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                        <div class="card-body" id="card-bodys">
+                            <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                            <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                                <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                                <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                                <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                                <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                                <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                                <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                                <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                                <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if is_mechtp %}
+            <div class="dss">
+                <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                    {% for dsres in mechresultss %}
+                    <div   class="card" style="width:25%; margin: 40px;">
+                        <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                        <div class="card-body" id="card-bodys">
+                            <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                            <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                                <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                                <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                                <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                                <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                                <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                                <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                                <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                                <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                </div>
+            {% endif %}
+            {% if is_csetp %}
+            <div class="dss">
+                <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                    {% for dsres in cseresultss %}
+                    <div   class="card" style="width:25%; margin: 40px;">
+                        <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                        <div class="card-body" id="card-bodys">
+                            <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                            <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                                <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                                <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                                <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                                <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                                <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                                <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                                <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                                <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                </div>
+            {% endif %}
+
+            {% if is_alldepartments %}
+            <div class="isalldepartments">
+                <div class="edeprt" style="background-color:#FFA856;
+                background-image: linear-gradient(316deg, #f94327 0%, #ff7d14 74%);">
+                    <a href="{{url_for('ds_students',tpusername=tpusername)}}" id="dname" style="color:white;">Datascience</a>
+                </div>
+                <div class="edeprt" style="background-color:#90EE90";>
+                    <a id="dname" href="{{url_for('cse_students')}}">ComputerScience</a>
+                </div>
+                <div class="edeprt" style="background-color:#FF4040";>
+                    <a  id="dname" href="{{url_for('ece_students')}}">ECE</a>
+                </div>
+                <div class="edeprtl" style="background-color:#FFFAA0";>
+                    <a  id="dname"  href="{{url_for('civil_students')}}">CIVIL</a>
+                </div>
+                <div class="edeprtl" style="background-color:#CBC3E3";>
+                    <a  id="dname" href="{{url_for('mech_students')}}">MECH</a>
+                </div>
+                <div class="edeprtl" style="background-color:";>
+                    <a  id="dname" href="{{url_for('aiml_students')}}">AIML</a>
+                </div>
+                
+               
+            </div>
+            {% endif %}
+
+            {% if   is_plcomplaints %}
+            <div class="pcc">
+                <div class="PComplaints" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                    {% for cres in  complresultss %}
+                    <div  class="card" style="width: 28%; margin: 10px;overflow:hidden;">
+                        <img class="card-img-top"  height="300px" src="data:image/png;base64,{{ cres['cimage'] }}" alt="Card image cap">
+                        <div class="card-body" id="card-bodys">
+                            <h5 class="card-title">Student Name: {{ cres['cname']}}</h5>
+                            <h5 class="card-title">Roll No: {{ cres['cid'] }}</h5>
+                            <p class="card-text" style="color:red;font-weight:bold;" id="Description">DESCRIPTION: {{ cres['cdescription'] }}</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" id="department">Department: {{ cres['cdepartment'] }}</li>
+                                <li class="list-group-item" id="department">Section: {{ cres['csection'] }}</li>
+                                <li class="list-group-item" id="department">Category: {{ cres['ccategory'] }}</li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if is_get_spec_students %}
+            <div>
+                <div class="form-floating mb-3">
+                    <form action="/eachstudent">
+                        <label for="floatingInput">Student_Id</label>
+                        <input type="integer" id="floatingInput"  class="form-control" name="esid" placeholder="EnterStudentId" required/>
+                        <button type="submit">Get_Student_Info</button>
+                    </form>
+                </div>
+                <hr>
+                <br>
+                <form action="/getspecfper">
+                    <label for="depart">Select Department</label>
+                    <select id="sdepart" name="sdepart" required>
+                        <option value="">select department</option>
+                        <option value="DATASCIENCE">DATASCIENCE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="AIML">AIML</option>
+                        <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                    </select>
+                    <label for="firstper">Please Enter the students Percentage Numbers</label>
+                    <input type="number" id="firstper" name="firstper" />
+                    <label for="secondper">Up to which perectage</label>
+                    <input type="number" id="secondper" name="secondper" />
+                    <input type="submit" value="submit" />
+                </form>
+                <br>
+                <hr>
+                <br>
+                <p>Get Top 10 Students </p>
+                <form action="/topten">
+                    <label for="depart">Select Department</label>
+                        <select id="sdepart" name="sdepart" required>
+                            <option value="">select department</option>
+                            <option value="DATASCIENCE">DATASCIENCE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="AIML">AIML</option>
+                            <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                        </select>
+                        <br>
+                    <button type="Sumbit">Get_Top_Ten_Students</button>
+                </form>
+
+                <p>Get Top 10 Bottom Students </p>
+                <form action="/bottomten">
+                    <label for="depart">Select Department</label>
+                        <select id="sdepart" name="sdepart" required>
+                            <option value="">select department</option>
+                            <option value="DATASCIENCE">DATASCIENCE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="AIML">AIML</option>
+                            <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                        </select>
+                        <br>
+                    <button type="Sumbit">Get_Bottom_Ten_Students</button>
+                </form>
+                <br>
+                <br>
+                <p>Get Top 20 Students </p>
+                <form action="/toptwenty">
+                    <label for="sdepart">Select Department</label>
+                        <select id="sdepart" name="sdepart" required>
+                            <option value="">select department</option>
+                            <option value="DATASCIENCE">DATASCIENCE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="AIML">AIML</option>
+                            <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                        </select>
+                        <br>
+                    <button type="Sumbit">Get_Top_Twenty_Students</button>
+                </form>
+                <br>
+                <p>Get Bottom 20 Students </p>
+                <form action="/bottomtwenty">
+                    <label for="depart">Select Department</label>
+                        <select id="sdepart" name="sdepart" required>
+                            <option value="">select department</option>
+                            <option value="DATASCIENCE">DATASCIENCE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="AIML">AIML</option>
+                            <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                        </select>
+                        <br>
+                    <button type="Sumbit">Get_Bottom_Twenty_Students</button>
+                </form>
+                <br>
+                <br>
+                <hr>
+                <p>Get Students CGPA Greater Than 6.0</p>
+                <form action="/bottomsix">
+                    <label for="depart">Select Department</label>
+                        <select id="sdepart" name="sdepart" required>
+                            <option value="">select department</option>
+                            <option value="DATASCIENCE">DATASCIENCE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="AIML">AIML</option>
+                            <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                        </select>
+                        <br>
+                    <button type="Sumbit">Get_Students_with_greater_than_6.0</button>
+                </form>
+                <br>
+                <hr>
+                <p>Get Students CGPA Greater Than 7.0</p>
+                <form action="/bottomseven">
+                    <label for="depart">Select Department</label>
+                        <select id="sdepart" name="sdepart" required>
+                            <option value="">select department</option>
+                            <option value="DATASCIENCE">DATASCIENCE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="AIML">AIML</option>
+                            <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                        </select>
+                        <br>
+                    <button type="Sumbit">Get_Students_with_greater_than_7.0</button>
+                </form>
+                <br>
+                <hr>
+                <p>Get Students CGPA Greater Than 8.0</p>
+                <form action="/bottomeight">
+                    <label for="depart">Select Department</label>
+                        <select id="sdepart" name="sdepart" required>
+                            <option value="">select department</option>
+                            <option value="DATASCIENCE">DATASCIENCE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="AIML">AIML</option>
+                            <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                        </select>
+                        <br>
+                    <button type="Sumbit">Get_Students_with_greater_than_8.0</button>
+                </form>
+                <br>
+                <hr>
+                <p>Get Students CGPA Greater Than 9.0</p>
+                <form action="/bottomnine">
+                    <label for="depart">Select Department</label>
+                        <select id="sdepart" name="sdepart" required>
+                            <option value="">select department</option>
+                            <option value="DATASCIENCE">DATASCIENCE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="CIVIL">CIVIL</option>
+                            <option value="AIML">AIML</option>
+                            <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                        </select>
+                        <br>
+                    <button type="Sumbit">Get_Students_with_greater_than_9.0</button>
+                </form>
+                  
+                  
+            </div>
+            {% endif %}
+
+            {% if is_specress %}
+            <div class="dss">
+                <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                    {% for dsres in specfiedress %}
+                    <div   class="card" style="width:35%; margin: 40px;">
+                        <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                        <div class="card-body" id="card-bodys">
+                            <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                            <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                                <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                                <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                                <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                                <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                                <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                                <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                                <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                                <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                                <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+               
+        {% if is_eachsid %}
+        <div class="dss">
+            <div class="edssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                {% for dsres in eachsturesults %}
+                <div  class="card"  style="width:35%;margin: 40px;border:2px solid black;position:relative;left:200px;bottom:60px;">
+                    <h3>Your are Enquriy About {{ dsres['SFULLNAME']}} </h3>
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                        <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                            <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                            <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                            <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                            <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                            <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+
+        
+        {% if is_topten %}
+        <div class="dss">
+            
+            <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                {% for dsres in toptenress %}
+                <div   class="card" style="width:25%; margin: 40px;">
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                        <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                            <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                            <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                            <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                            <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                            <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+      
+     
+        {% if is_toptwenty %}
+        <div class="dss">
+            <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                {% for dsres in toptwentyress %}
+                <div   class="card" style="width:25%; margin: 40px;">
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                        <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                            <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                            <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                            <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                            <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                            <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% if is_bottomtwenty %}
+        <div class="dss">
+            <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                {% for dsres in bottomtwentyress %}
+                <div   class="card" style="width:25%; margin: 40px;">
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                        <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                            <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                            <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                            <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                            <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                            <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% if is_bottomten %}
+        <div class="dss">
+            <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                {% for dsres in bottomtenress  %}
+                <div   class="card" style="width:25%; margin: 40px;">
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                        <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                            <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                            <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                            <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                            <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                            <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if  is_bottom_six %}
+        <div class="dss">
+            <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                {% for dsres in bottom_six_results  %}
+                <div   class="card" style="width:25%; margin: 40px;">
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                        <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                            <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                            <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                            <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                            <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                            <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if  is_bottom_seven %}
+        <div class="dss">
+            <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                {% for dsres in bottom_seven_results  %}
+                <div   class="card" style="width:25%; margin: 40px;">
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                        <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                            <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                            <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                            <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                            <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                            <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if  is_bottom_eight %}
+        <div class="dss">
+            <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                {% for dsres in bottom_eight_results  %}
+                <div   class="card" style="width:25%; margin: 40px;">
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                        <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                            <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                            <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                            <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                            <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                            <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+        {% if is_bottom_nine %}
+        <div class="dss">
+            <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+                {% for dsres in bottom_nine_results  %}
+                <div   class="card" style="width:25%; margin: 40px;">
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['SIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Roll No:<h3 style="border:2px solid black;text-align: center;">{{ dsres['SID'] }}</h3></h5>
+                        <h5 class="card-title">Student Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['SFULLNAME']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">FATHERNAME:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">MOBILENUMBER:{{dsres['S-MOBNUMBER']}}</li>
+                            <li class="list-group-item" id="department">DATEOFBIRTH:{{dsres['SFATHERNAME']}}</li>
+                            <li class="list-group-item" id="department">GENDER:{{dsres['SGENDER']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['SEMAIL']}}</li>
+                            <li class="list-group-item" id="department">COURSE:{{dsres['SCOURSE']}}</li>
+                            <li class="list-group-item" id="department">SSC-MARKS:{{dsres['SSSC']}}</li>
+                            <li class="list-group-item" id="department">INTER-MARKS{{dsres['SINTER']}}</li>
+                            <li class="list-group-item" id="department">CGPA<h3 style="border:2px solid black;width:60px;position:relative;left:40%;border-radius:10px;padding:3px;">{{dsres['SGPA']}}</h3></li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['S-MOBNUMBER'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['SEMAIL'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if add_jobs %}
+        <div class="addjobs">
+           <form method="POST" action="{{ url_for('add_jobs') }}" onsubmit="window.alert('Sucessfully Inserted Job Details...');">
+               <h3>Insert Job Details</h3>
+               <label for="application_deadline">Job_Posting_Date:</label>
+               <input type="date" id="application_deadline" name="postingdate" required><br>
+               <label for="companyname">Company_Name</label>
+               <input type="text" id="companyname"  style="position:relative;left:19px;" name="companyname" required>
+               <br>
+               <label for="jemail">Company_Email</label>
+               <div class="jemails">
+               <input type="email" id="jemail" style="position:relative;left:119px;"  name="email" required>
+               </div>
+               <label for="jobposition">Job_Position</label>
+               <div class="jobpositions">
+               <input type="text" id="jobposition" style="position:relative;left:53px;"  name="jobposition" required>
+               </div>
+               <label for="job_type">Job Type:</label>
+            <select id="job_type" name="jjob_type">
+                <option value="">Select_job_type</option>
+                <option value="full_time">Full-time</option>
+                <option value="part_time">Part-time</option>
+                <option value="internship">Internship</option>
+            </select>
+               <br>
+               <label for="location">Location</label>
+               <div class="locations">
+               <input type="text" id="location" style="position:relative;left:90px;"  name="location" required>
+               </div>
+               <label for="job_description">Job Description:</label>
+               <textarea id="job_description" name="job_description" required></textarea>
+               <br>
+               <label for="requriments">Requriments</label>
+               <div class="requriments">
+               <input type="text" id="requriments" style="position:relative;left:52px;"  name="requriments" required>
+               </div>
+               <label for="application_deadline">Application Deadline:</label>
+               <input type="date" id="application_deadline" name="application_deadline" required>
+               <br>
+               <label for="url">Url</label>
+               <div class="urls">
+               <input type="url" id="url" style="position:relative;left:145px;"  name="url" required>
+               </div>
+               <label for="contact_information">Contact Information:</label>
+               <input type="text" id="contact_information" name="jcontact_information" required>
+               <br>
+               <br>
+               <div class="submits">
+               <input type="submit"  style="position:relative;left:190px;bottom:10px;"  value="Submit" href="/" id="nsubmit">
+               </div>
+           </form>
+        </div>
+        {% endif %}
+
+       {% if add_aluminis %}
+                <div class="add_aluminis">
+                <form action="/add_alumini" id="alumniForm" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="alname" required><br><br>
+                    
+                    <label for="graduation_year">Graduation Year:</label>
+                    <input type="number" id="graduation_year" name="graduation_year" required><br><br>
+                    
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location"><br><br>
+                    
+                    <label for="current_job_position">Current Job Position:</label>
+                    <input type="text" id="current_job_position" name="current_job_position"><br><br>
+                    
+                    <label for="internship_experience">Internship Experience:</label>
+                    <textarea id="internship_experience" name="internship_experience"></textarea><br><br>
+                    
+                    <label for="company_name">Company Name:</label>
+                    <input type="text" id="company_name" name="company_name"><br><br>
+                    
+                    <label for="professional_certifications">Professional Certifications:</label>
+                    <input type="text" id="professional_certifications" name="professional_certifications"><br><br>
+                    
+                    <label for="github">GitHub Profile:</label>
+                    <input type="url" id="github" name="github"><br><br>
+                    
+                    <label for="linkedin">LinkedIn Profile:</label>
+                    <input type="url" id="linkedin" name="linkedin"><br><br>
+                    
+                    <label for="hackerrank">HackerRank Profile:</label>
+                    <input type="url" id="hackerrank" name="hackerrank"><br><br>
+                    
+                    <label for="interview_questions">Interview Questions:</label>
+                    <textarea id="interview_questions" name="interview_questions"></textarea><br><br>
+                    
+                    <label for="salary_range">Salary Range Tips:</label>
+                    <textarea id="salary_range" name="salary_range"></textarea><br><br>
+                    
+                    <label for="success_story">Success Story:</label>
+                    <textarea id="success_story" name="success_story"></textarea><br><br>
+                    
+                    <label for="work_life_balance_tips">Work-Life Balance Tips:</label>
+                    <textarea id="work_life_balance_tips" name="work_life_balance_tips"></textarea><br><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        {% endif %}
+
+
+
+
+
+
+            
+
+    
+    </div>
+        
+</body>
+</html>

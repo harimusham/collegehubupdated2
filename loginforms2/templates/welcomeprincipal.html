@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Welcome Principal</title>
+        <style>
+            img.sticky
+            {
+               position: sticky;
+               top: 0;
+               width:100%;
+            }
+           img
+           {
+               border:2px solid black;
+               border-radius:10px;
+               margin-bottom:10px;
+           }
+           .abc
+           {
+               margin-top:50px;
+               width:30%;
+               display:inline-block;
+               box-sizing:border-box;
+               position:relative;
+               max-height:620px;
+               left:0px;
+               border:4px solid black;
+               
+               color:white;
+               bottom:40px;
+               box-shadow: 5px 10px 8px 10px #888888;
+   
+           }
+           .custom-flex {
+               display: flex;
+       
+               gap: 8rem;
+           }
+           td
+           {
+             
+               font-weight:bold;
+           }
+           td
+           {
+               color:brown;
+           }
+         
+           span
+           {
+               color:blue;
+               text-decoration:uppercase;
+               text-decoration: underline;
+               font-style:italic;
+           }
+           .vl
+           {
+               border:3px solid black;
+               height:2000px;
+           }
+           .dss
+           {
+                display:flex;
+           }
+           .dss
+           {
+                position:relative;
+                border:2px solid black;
+           }
+           .isalldepartments
+           {
+            border:2px solid black;
+            width:1050px;
+            height:500px;
+            display:flex;
+            gap:50px;
+            flex-wrap: wrap;
+            margin-top:10px;
+            flex-direction: center;
+            padding: 15px 20px;
+           }
+           .edeprt
+           {
+            width:300px;
+            height:200px;
+            border:1px solid black;
+            text-align:center;
+            border-radius:20px;
+          
+           }
+           .edeprtl
+           {
+            width:300px;
+            height:200px;
+            border:1px solid black;
+            text-align:center;
+            border-radius:20px;
+            
+           }
+           #dname
+           {
+            text-decoration:none;
+            font-weight:bold;
+            text-transform:uppercase;
+            position:relative;
+            top:60px;
+            color:black;
+           }
+           #hds
+           {
+            position:relative;
+            bottom:100px;
+            width:500px;
+           }
+           .dssmain
+           {
+            position:relative;
+            left:100px;
+           
+           }
+           .forstudents
+           {
+            border:2px solid black;
+            padding:150px;
+            width:150px;
+            border-radius:50px;
+           }
+           .forfacultys
+           {
+            border:2px solid black;
+            padding:150px;
+            width:150px;
+            border-radius:50px;
+
+           }
+           .stun
+           {
+            text-decoration:none;
+            font-weight:bold;
+            color:black;
+            font-size:50px;
+            position:relative;
+            right:90px;
+           }
+           .facn
+           {
+            text-decoration:none;
+            font-weight:bold;
+            color:black;
+            font-size:50px;
+            position:relative;
+            right:90px;
+            border-radius:50px;
+
+           }
+           #notf
+           {
+            position:relative;
+            left:50px;
+            display:flex;
+            gap:150px;
+           }
+           .navbar {
+            overflow: hidden;
+            background-color: #333;
+          }
+          .isalldepartmentsp
+          {
+           border:2px solid black;
+           width:1050px;
+           height:550px;
+           display:flex;
+           gap:90px;
+           flex-wrap: wrap;
+           margin-top:10px;
+           flex-direction: center;
+           padding: 15px 20px;
+        
+          }
+          .edeprtp
+          {
+           width:300px;
+           height:200px;
+           border:1px solid black;
+           text-align:center;
+           border-radius:20px;
+           position:relative;
+           left:100px;
+         
+          }
+          .edeprtlp
+          {
+           width:300px;
+           height:200px;
+           border:1px solid black;
+           text-align:center;
+           border-radius:20px;
+           position:relative;
+           left:100px;
+           
+          }
+          .getemails
+          {
+            border:2px solid black;
+            padding:20px;
+            text-align:center;
+          }
+          
+        </style>
+</head>
+<body>
+    <div>
+        <img src="static/sreyasheader.jpg"  width="100%" height="110px">
+    </div>
+    <h3>WELCOME.............PRINCIPAL</h3>
+    <hr>
+    <div class="custom-flex">
+        <div class="list-group mb-4 abc border border-3  rounded stuclass">
+            <div  class="button_cont">
+                <a id="pp"  href="{{url_for('palldepartments')}}" class="list-group-item list-group-item-action border border-5 rounded bg-opacity-75 example_f"><img width="39" height="39" src="https://img.icons8.com/ios/50/user-menu-male.png" alt="user-menu-male"/>FACULTY_PROFILES</a>
+            </div>
+            <div  class="button_cont">
+                <a  id="ssmarks"  href="{{url_for('is_psearchall')}}" class="list-group-item list-group-item-action border border-5 rounded bg-opacity-75 example_f"><img width="39" height="39" src="https://img.icons8.com/ios/50/report-card.png" alt="report-card"/>STUDENT_SEARCH</a>
+            </div> 
+            <div>
+                <a  id="pp"  href="#" class="list-group-item list-group-item-action border border-5 rounded bg-opacity-75 example_f"><img width="39" height="39" src="https://img.icons8.com/dotty/80/attendance-mark.png" alt="attendance-mark"/>SearchStudents</a>
+            </div>
+            <div>
+                <a   id="pp"  href="{{url_for('notification_raiser')}}" class="list-group-item list-group-item-action border border-5 rounded  p-2 text-dark bg-opacity-75  example_f"><img  class="car" width="39" height="39" src="https://img.icons8.com/dotty/80/personal-growth.png" alt="personal-growth"/>Notification_Raiser</a>
+            </div>
+            <div>
+                <a  id="pp"   href="#"  class="list-group-item list-group-item-action border border-5 rounded bg-opacity-75 example_f"><img width="39" height="39" src="https://img.icons8.com/ios-filled/50/task.png" alt="task"/>ALUMINI-STUDENTS</a>
+            </div>
+        </div>
+        {% if is_allpdepartments %}
+        <div class="isalldepartments">
+            <div class="edeprt" style="background-color:#FFA856;
+            background-image: linear-gradient(316deg, #f94327 0%, #ff7d14 74%);">
+                <a href="{{url_for('ds_faculty',tpusername=tpusername)}}" id="dname" style="color:white;">Datascience</a>
+            </div>
+            <div class="edeprt" style="background-color:#90EE90";>
+                <a id="dname" href="{{url_for('cse_faculty',tpusername=tpusername)}}">ComputerScience</a>
+            </div>
+            <div class="edeprt" style="background-color:#FF4040";>
+                <a  id="dname" href="{{url_for('ece_faculty',tpusername=tpusername)}}">ECE</a>
+            </div>
+            <div class="edeprtl" style="background-color:#FFFAA0";>
+                <a  id="dname"  href="{{url_for('civil_faculty',tpusername=tpusername)}}">CIVIL</a>
+            </div>
+            <div class="edeprtl" style="background-color:#CBC3E3";>
+                <a  id="dname" href="{{url_for('mech_faculty',tpusername=tpusername)}}">MECH</a>
+            </div>
+            <div class="edeprtl" style="background-color:";>
+                <a  id="dname" href="{{url_for('aiml_faculty',tpusername=tpusername)}}">AIML</a>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if is_dsfp %}
+        
+        <div class="dss">
+           
+            <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+
+                {% for dsres in   dsfacultyres %}
+                <div   class="card" style="width:25%; margin: 40px;">
+                    <img class="card-img-top" src="data:image/png;base64,{{ dsres['FIMAGE'] }}" alt="Card image cap" height="300px">
+                    <div class="card-body" id="card-bodys">
+                        <h5 class="card-title">Faculty_Id<h3 style="border:2px solid black;text-align: center;">{{dsres['facid'] }}</h3></h5>
+                        <h5 class="card-title">Faculty_User_Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['fusername']}}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" id="department">NAME:{{dsres['fname']}}</li>
+                            <li class="list-group-item" id="department">DEPARTMENT:{{dsres['fdepartment']}}</li>
+                            <li class="list-group-item" id="department">DESIGNATION:{{dsres['fdesignation']}}</li>
+                            <li class="list-group-item" id="department">MOBILE:{{dsres['fmobile']}}</li>
+                            <li class="list-group-item" id="department">EMAIL:{{dsres['femail']}}</li>
+                            <li class="list-group-item" id="department">SPECIFICATION:{{dsres['fspecification']}}</li>
+                            <li class="list-group-item" id="department">ADDRESS:{{dsres['faddress']}}</li>
+                            <a href="https://api.whatsapp.com/send?phone={{ dsres['fmobile'] }}" class="btn btn-primary">Contact</a><br>
+                            <a href="mailto:{{ dsres['femail'] }}" class="btn btn-primary">Send Email</a>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+    {% if is_ecefp %}
+    <div class="dss">
+        <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+            {% for dsres in   ecefacultyres %}
+            <div   class="card" style="width:25%; margin: 40px;">
+                <img class="card-img-top" src="data:image/png;base64,{{ dsres['FIMAGE'] }}" alt="Card image cap" height="300px">
+                <div class="card-body" id="card-bodys">
+                    <h5 class="card-title">Faculty_Id<h3 style="border:2px solid black;text-align: center;">{{dsres['facid'] }}</h3></h5>
+                    <h5 class="card-title">Faculty_User_Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['fusername']}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="department">NAME:{{dsres['fname']}}</li>
+                        <li class="list-group-item" id="department">DEPARTMENT:{{dsres['fdepartment']}}</li>
+                        <li class="list-group-item" id="department">DESIGNATION:{{dsres['fdesignation']}}</li>
+                        <li class="list-group-item" id="department">MOBILE:{{dsres['fmobile']}}</li>
+                        <li class="list-group-item" id="department">EMAIL:{{dsres['femail']}}</li>
+                        <li class="list-group-item" id="department">SPECIFICATION:{{dsres['fspecification']}}</li>
+                        <li class="list-group-item" id="department">ADDRESS:{{dsres['faddress']}}</li>
+                        <a href="https://api.whatsapp.com/send?phone={{ dsres['fmobile'] }}" class="btn btn-primary">Contact</a><br>
+                        <a href="mailto:{{ dsres['femail'] }}" class="btn btn-primary">Send Email</a>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    {% if is_csefp %}
+    <div class="dss">
+        <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+            {% for dsres in   csefacultyres %}
+            <div   class="card" style="width:25%; margin: 40px;">
+                <img class="card-img-top" src="data:image/png;base64,{{ dsres['FIMAGE'] }}" alt="Card image cap" height="300px">
+                <div class="card-body" id="card-bodys">
+                    <h5 class="card-title">Faculty_Id<h3 style="border:2px solid black;text-align: center;">{{dsres['facid'] }}</h3></h5>
+                    <h5 class="card-title">Faculty_User_Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['fusername']}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="department">NAME:{{dsres['fname']}}</li>
+                        <li class="list-group-item" id="department">DEPARTMENT:{{dsres['fdepartment']}}</li>
+                        <li class="list-group-item" id="department">DESIGNATION:{{dsres['fdesignation']}}</li>
+                        <li class="list-group-item" id="department">MOBILE:{{dsres['fmobile']}}</li>
+                        <li class="list-group-item" id="department">EMAIL:{{dsres['femail']}}</li>
+                        <li class="list-group-item" id="department">SPECIFICATION:{{dsres['fspecification']}}</li>
+                        <li class="list-group-item" id="department">ADDRESS:{{dsres['faddress']}}</li>
+                        <a href="https://api.whatsapp.com/send?phone={{ dsres['fmobile'] }}" class="btn btn-primary">Contact</a><br>
+                        <a href="mailto:{{ dsres['femail'] }}" class="btn btn-primary">Send Email</a>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    {% if is_aimlfp %}
+    <div class="dss">
+        <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+            {% for dsres in   aimlfacultyres %}
+            <div   class="card" style="width:25%; margin: 40px;">
+                <img class="card-img-top" src="data:image/png;base64,{{ dsres['FIMAGE'] }}" alt="Card image cap" height="300px">
+                <div class="card-body" id="card-bodys">
+                    <h5 class="card-title">Faculty_Id<h3 style="border:2px solid black;text-align: center;">{{dsres['facid'] }}</h3></h5>
+                    <h5 class="card-title">Faculty_User_Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['fusername']}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="department">NAME:{{dsres['fname']}}</li>
+                        <li class="list-group-item" id="department">DEPARTMENT:{{dsres['fdepartment']}}</li>
+                        <li class="list-group-item" id="department">DESIGNATION:{{dsres['fdesignation']}}</li>
+                        <li class="list-group-item" id="department">MOBILE:{{dsres['fmobile']}}</li>
+                        <li class="list-group-item" id="department">EMAIL:{{dsres['femail']}}</li>
+                        <li class="list-group-item" id="department">SPECIFICATION:{{dsres['fspecification']}}</li>
+                        <li class="list-group-item" id="department">ADDRESS:{{dsres['faddress']}}</li>
+                        <a href="https://api.whatsapp.com/send?phone={{ dsres['fmobile'] }}" class="btn btn-primary">Contact</a><br>
+                        <a href="mailto:{{ dsres['femail'] }}" class="btn btn-primary">Send Email</a>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    {% if is_civilfp %}
+    <div class="dss">
+        <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+            {% for dsres in   civilfacultyres %}
+            <div   class="card" style="width:25%; margin: 40px;">
+                <img class="card-img-top" src="data:image/png;base64,{{ dsres['FIMAGE'] }}" alt="Card image cap" height="300px">
+                <div class="card-body" id="card-bodys">
+                    <h5 class="card-title">Faculty_Id<h3 style="border:2px solid black;text-align: center;">{{dsres['facid'] }}</h3></h5>
+                    <h5 class="card-title">Faculty_User_Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['fusername']}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="department">NAME:{{dsres['fname']}}</li>
+                        <li class="list-group-item" id="department">DEPARTMENT:{{dsres['fdepartment']}}</li>
+                        <li class="list-group-item" id="department">DESIGNATION:{{dsres['fdesignation']}}</li>
+                        <li class="list-group-item" id="department">MOBILE:{{dsres['fmobile']}}</li>
+                        <li class="list-group-item" id="department">EMAIL:{{dsres['femail']}}</li>
+                        <li class="list-group-item" id="department">SPECIFICATION:{{dsres['fspecification']}}</li>
+                        <li class="list-group-item" id="department">ADDRESS:{{dsres['faddress']}}</li>
+                        <a href="https://api.whatsapp.com/send?phone={{ dsres['fmobile'] }}" class="btn btn-primary">Contact</a><br>
+                        <a href="mailto:{{ dsres['femail'] }}" class="btn btn-primary">Send Email</a>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+    {% if is_mechfp %}
+    <div class="dss">
+        <div class="dssmain" style="display: flex; flex-wrap: wrap;overflow:hidden;">
+            {% for dsres in   mechfacultyres %}
+            <div   class="card" style="width:25%; margin: 40px;">
+                <img class="card-img-top" src="data:image/png;base64,{{ dsres['FIMAGE'] }}" alt="Card image cap" height="300px">
+                <div class="card-body" id="card-bodys">
+                    <h5 class="card-title">Faculty_Id<h3 style="border:2px solid black;text-align: center;">{{dsres['facid'] }}</h3></h5>
+                    <h5 class="card-title">Faculty_User_Name:<h3 style="text-align: center;text-decoration:underline;font-weight:bold;"> {{ dsres['fusername']}}</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="department">NAME:{{dsres['fname']}}</li>
+                        <li class="list-group-item" id="department">DEPARTMENT:{{dsres['fdepartment']}}</li>
+                        <li class="list-group-item" id="department">DESIGNATION:{{dsres['fdesignation']}}</li>
+                        <li class="list-group-item" id="department">MOBILE:{{dsres['fmobile']}}</li>
+                        <li class="list-group-item" id="department">EMAIL:{{dsres['femail']}}</li>
+                        <li class="list-group-item" id="department">SPECIFICATION:{{dsres['fspecification']}}</li>
+                        <li class="list-group-item" id="department">ADDRESS:{{dsres['faddress']}}</li>
+                        <a href="https://api.whatsapp.com/send?phone={{ dsres['fmobile'] }}" class="btn btn-primary">Contact</a><br>
+                        <a href="mailto:{{ dsres['femail'] }}" class="btn btn-primary">Send Email</a>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    {% if is_psearchstudent %}
+        <h3 class="ps"></h3>
+        <div id="ss" class="shadow p-3 mb-5 bg-body-tertiary rounded rounded-5"> 
+            <form method="POST" action="/pviewstudentdata">
+                <label for="sids"   style="position: relative;left:120px;font-weight: bold;text-decoration: underline;font-size:30px;">SID </label>
+                <input type="integer" style="font-weight: bold;" id="sids" name="sidp"  class="form-control" required maxlength="4" placeholder="Enter Student Id">
+                <br>
+                <label for="ssuser"  style="position: relative;left:30px;font-weight:bold;text-decoration: underline;font-size:30px;">Enter UserName</label>
+                <input type="text"  style="font-weight: bold;" id="ssuser" name="sfullp"  class="form-control" required placeholder="Enter Full Name">
+                <br>
+                {% if search_error %}
+                <p style="color: red;text-decoration:underline;font-weight: bold;font-size:20px;">{{ search_error }}</p>  <!-- Display the error message -->
+                {% endif %}
+                <input type="submit" id="submit" value="Submit" href="/">
+                <br>
+            </form>
+        </div>
+    {% endif %}
+
+    {% if is_psearchall %}
+    <div>
+        <div class="form-floating mb-3">
+            <form action="/eachstudent">
+                <label for="floatingInput">Student_Id</label>
+                <input type="integer" id="floatingInput"  class="form-control" name="esid" placeholder="EnterStudentId" required/>
+                <button type="submit">Get_Student_Info</button>
+            </form>
+        </div>
+        <hr>
+        <br>
+        <form action="/getspecfper">
+            <label for="depart">Select Department</label>
+            <select id="sdepart" name="sdepart" required>
+                <option value="">select department</option>
+                <option value="DATASCIENCE">DATASCIENCE</option>
+                <option value="ECE">ECE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="AIML">AIML</option>
+                <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+            </select>
+            <label for="firstper">Please Enter the students Percentage Numbers</label>
+            <input type="number" id="firstper" name="firstper" />
+            <label for="secondper">Up to which perectage</label>
+            <input type="number" id="secondper" name="secondper" />
+            <input type="submit" value="submit" />
+        </form>
+        <br>
+        <hr>
+        <br>
+        <p>Get Top 10 Students </p>
+        <form action="/topten">
+            <label for="depart">Select Department</label>
+                <select id="sdepart" name="sdepart" required>
+                    <option value="">select department</option>
+                    <option value="DATASCIENCE">DATASCIENCE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="AIML">AIML</option>
+                    <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                </select>
+                <br>
+            <button type="Sumbit">Get_Top_Ten_Students</button>
+        </form>
+
+        <p>Get Top 10 Bottom Students </p>
+        <form action="/bottomten">
+            <label for="depart">Select Department</label>
+                <select id="sdepart" name="sdepart" required>
+                    <option value="">select department</option>
+                    <option value="DATASCIENCE">DATASCIENCE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="AIML">AIML</option>
+                    <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                </select>
+                <br>
+            <button type="Sumbit">Get_Bottom_Ten_Students</button>
+        </form>
+        <br>
+        <br>
+        <p>Get Top 20 Students </p>
+        <form action="/toptwenty">
+            <label for="sdepart">Select Department</label>
+                <select id="sdepart" name="sdepart" required>
+                    <option value="">select department</option>
+                    <option value="DATASCIENCE">DATASCIENCE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="AIML">AIML</option>
+                    <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                </select>
+                <br>
+            <button type="Sumbit">Get_Top_Twenty_Students</button>
+        </form>
+        <br>
+        <p>Get Bottom 20 Students </p>
+        <form action="/bottomtwenty">
+            <label for="depart">Select Department</label>
+                <select id="sdepart" name="sdepart" required>
+                    <option value="">select department</option>
+                    <option value="DATASCIENCE">DATASCIENCE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="AIML">AIML</option>
+                    <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                </select>
+                <br>
+            <button type="Sumbit">Get_Bottom_Twenty_Students</button>
+        </form>
+        <br>
+        <br>
+        <hr>
+        <p>Get Students CGPA Greater Than 6.0</p>
+        <form action="/bottomsix">
+            <label for="depart">Select Department</label>
+                <select id="sdepart" name="sdepart" required>
+                    <option value="">select department</option>
+                    <option value="DATASCIENCE">DATASCIENCE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="AIML">AIML</option>
+                    <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                </select>
+                <br>
+            <button type="Sumbit">Get_Students_with_greater_than_6.0</button>
+        </form>
+        <br>
+        <hr>
+        <p>Get Students CGPA Greater Than 7.0</p>
+        <form action="/bottomseven">
+            <label for="depart">Select Department</label>
+                <select id="sdepart" name="sdepart" required>
+                    <option value="">select department</option>
+                    <option value="DATASCIENCE">DATASCIENCE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="AIML">AIML</option>
+                    <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                </select>
+                <br>
+            <button type="Sumbit">Get_Students_with_greater_than_7.0</button>
+        </form>
+        <br>
+        <hr>
+        <p>Get Students CGPA Greater Than 8.0</p>
+        <form action="/bottomeight">
+            <label for="depart">Select Department</label>
+                <select id="sdepart" name="sdepart" required>
+                    <option value="">select department</option>
+                    <option value="DATASCIENCE">DATASCIENCE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="AIML">AIML</option>
+                    <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                </select>
+                <br>
+            <button type="Sumbit">Get_Students_with_greater_than_8.0</button>
+        </form>
+        <br>
+        <hr>
+        <p>Get Students CGPA Greater Than 9.0</p>
+        <form action="/bottomnine">
+            <label for="depart">Select Department</label>
+                <select id="sdepart" name="sdepart" required>
+                    <option value="">select department</option>
+                    <option value="DATASCIENCE">DATASCIENCE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="AIML">AIML</option>
+                    <option value="COMPUTERSCIENCE">COMPUTERSCIENCE</option>
+                </select>
+                <br>
+            <button type="Sumbit">Get_Students_with_greater_than_9.0</button>
+        </form>
+          
+          
+    </div>
+    {% endif %}
+
+    {% if is_notification %}
+    <div id="notf">
+        <div class="forstudents">
+            <a href="{{url_for('all_years_stu')}}" class="stun" >Students</a>
+        </div>
+        <div class="forfacultys">
+            <a  class="facn" href="#">Facultys</a>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if is_all_years_stu %}
+
+    <div class="isalldepartmentsp">
+        <div class="edeprtp" style="background-color:#FFA856;
+        background-image: linear-gradient(316deg, #f94327 0%, #ff7d14 74%);">
+            <a href="{{url_for('year1branchs')}}" id="dname" style="color:white;">YEAR1</a>
+        </div>
+        <div class="edeprtp" style="background-color:#90EE90";>
+            <a id="dname" href="{{url_for('year2branchs')}}">YEAR2</a>
+        </div>
+        <div class="edeprtp" style="background-color:#FF4040";>
+            <a  id="dname" href="{{url_for('year3branchs')}}">YEAR3</a>
+        </div>
+        <div class="edeprtlp" style="background-color:#FFFAA0";>
+            <a  id="dname" href="{{url_for('year4branchs')}}">YEAR4</a>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if is_year1branchs %}
+    
+    <ul>
+        <h4>These are the list of Departments in Year1</h4>
+        <li><a href="{{url_for('getds1mails')}}">DataScience</a></li>
+        <li><a href="{{url_for('getece1mails')}}">Ece</a></li>
+        <li><a href="{{url_for('getcivil1mails')}}">Civil</a></li>
+        <li><a href="{{url_for('getmech1mails')}}">Mech</a></li>
+        <li><a href="{{url_for('getaiml1mails')}}">Aiml</a></li>
+        <li><a href="{{url_for('getcse1mails')}}">CSE</a></li>
+    </ul>
+
+    {% endif %}
+
+    {% if is_year2branchs %}
+    
+    <ul>
+        <h4>These are the list of Departments in Year1</h4>
+        <li><a href="{{url_for('getds1mails')}}">DataScience</a></li>
+        <li><a href="{{url_for('getece1mails')}}">Ece</a></li>
+        <li><a href="{{url_for('getcivil1mails')}}">Civil</a></li>
+        <li><a href="{{url_for('getmech1mails')}}">Mech</a></li>
+        <li><a href="{{url_for('getaiml1mails')}}">Aiml</a></li>
+        <li><a href="{{url_for('getcse1mails')}}">CSE</a></li>
+    </ul>
+
+    {% endif %}
+
+    {% if is_year3branchs %}
+    
+    <ul>
+        <h4>These are the list of Departments in Year1</h4>
+        <li><a href="{{url_for('getdsmails')}}">DataScience</a></li>
+        <li><a href="#">Ece</a></li>
+        <li><a href="#">Civil</a></li>
+        <li><a href="#">Mech</a></li>
+        <li><a href="#">Aiml</a></li>
+        <li><a href="#">CSE</a></li>
+    </ul>
+
+    {% endif %}
+
+    {% if is_year4branchs %}
+    
+    <ul>
+        <h4>These are the list of Departments in Year1</h4>
+        <li><a href="{{url_for('getds1mails')}}">DataScience</a></li>
+        <li><a href="{{url_for('getece1mails')}}">Ece</a></li>
+        <li><a href="{{url_for('getcivil1mails')}}">Civil</a></li>
+        <li><a href="{{url_for('getmech1mails')}}">Mech</a></li>
+        <li><a href="{{url_for('getaiml1mails')}}">Aiml</a></li>
+        <li><a href="{{url_for('getcse1mails')}}">CSE</a></li>
+    </ul>
+
+    {% endif %}
+
+    {% if is_getds1mails %}
+        <div class="getemails">
+        <h4>DATA-SCIENCE YEAR-1 </h4>
+        <form action="/getds1emailscat">
+            <h3 style="text-decoration:underline;">PLEASE SELECT CATEGEORY OF STUDENTS TO INTERACT WITH</h3>
+            <select style="padding:10px;color:color;cursor: pointer;" id="dsp" name="dsp" required>
+                <option value="">SELECT CATEGEORY</option>
+                <hr>
+                <option value="1" style="color:black;font-weight:bold;">DATASCIENCE-A-B</option>
+                <hr>
+                <option value="2" style="color:black;font-weight:bold;">DATASCIENCE-SECTION-A</option>
+                <hr>
+                <option value="4" style="color:black;font-weight:bold;">DATASCIENCE-SECTION-B</option>
+                <hr>
+                <option value="3"  style="color:black;font-weight:bold;">CLASS REPRESENTATIVES</option>
+                <hr>
+                <option value="10" style="color:black;font-weight:bold;">Top20Students</option>
+                <hr>
+                <option value="20"  style="color:black;font-weight:bold;">BottomTwenty</option>
+                <hr>
+                
+                <hr>
+            </select>
+            <br>
+            <br>
+            <input type="submit" style="border:2px solid black;padding:5px;border-radius:5px;" value="PROCEED WITH PROCESS"/>
+        </form>
+        </div>
+    {% endif %}
+
+    {% if is_getece1mails %}
+    <div class="getemails">
+    <h4>ECE YEAR-1 </h4>
+    <form action="/getece1emailscat">
+        <h3 style="text-decoration:underline;">PLEASE SELECT CATEGEORY OF STUDENTS TO INTERACT WITH</h3>
+        <select style="padding:10px;color:color;cursor: pointer;" id="dsp" name="dsp" required>
+            <option value="">SELECT CATEGEORY</option>
+            <hr>
+            <option value="1" style="color:black;font-weight:bold;">ECE-A-B</option>
+            <hr>
+            <option value="2" style="color:black;font-weight:bold;">ECE-SECTION-A</option>
+            <hr>
+            <option value="4" style="color:black;font-weight:bold;">ECE-SECTION-B</option>
+            <hr>
+            <option value="3"  style="color:black;font-weight:bold;">CLASS REPRESENTATIVES</option>
+            <hr>
+            <option value="10" style="color:black;font-weight:bold;">ECE-TOP-20</option>
+            <hr>
+            <option value="20"  style="color:black;font-weight:bold;">ECE-LAST-20</option>
+            <hr>
+            
+            <hr>
+        </select>
+        <br>
+        <br>
+        <input type="submit" style="border:2px solid black;padding:5px;border-radius:5px;" value="PROCEED WITH PROCESS"/>
+    </form>
+    </div>
+    {% endif %}
+
+    {% if is_getaiml1mails %}
+    <div class="getemails">
+    <h4>AIML YEAR-1 </h4>
+    <form action="/getaiml1emailscat">
+        <h3 style="text-decoration:underline;">PLEASE SELECT CATEGEORY OF STUDENTS TO INTERACT WITH</h3>
+        <select style="padding:10px;color:color;cursor: pointer;" id="dsp" name="dsp" required>
+            <option value="">SELECT CATEGEORY</option>
+            <hr>
+            <option value="1" style="color:black;font-weight:bold;">AIML-A-B</option>
+            <hr>
+            <option value="2" style="color:black;font-weight:bold;">AIML-SECTION-A</option>
+            <hr>
+            <option value="4" style="color:black;font-weight:bold;">AIML-SECTION-B</option>
+            <hr>
+            <option value="3"  style="color:black;font-weight:bold;">CLASS REPRESENTATIVES</option>
+            <hr>
+            <option value="10" style="color:black;font-weight:bold;">AIML-TOP-20</option>
+            <hr>
+            <option value="20"  style="color:black;font-weight:bold;">AIML-LAST-20</option>
+            <hr>
+            
+            <hr>
+        </select>
+        <br>
+        <br>
+        <input type="submit" style="border:2px solid black;padding:5px;border-radius:5px;" value="PROCEED WITH PROCESS"/>
+    </form>
+    </div>
+    {% endif %}
+
+    {% if is_getcivil1mails %}
+    <div class="getemails">
+    <h4>CIVIL YEAR-1 </h4>
+    <form action="/getcivil1emailscat">
+        <h3 style="text-decoration:underline;">PLEASE SELECT CATEGEORY OF STUDENTS TO INTERACT WITH</h3>
+        <select style="padding:10px;color:color;cursor: pointer;" id="dsp" name="dsp" required>
+            <option value="">SELECT CATEGEORY</option>
+            <hr>
+            <option value="1" style="color:black;font-weight:bold;">CIVIL-A-B</option>
+            <hr>
+            <option value="2" style="color:black;font-weight:bold;">CIVIL-SECTION-A</option>
+            <hr>
+            <option value="4" style="color:black;font-weight:bold;">CIVIL-SECTION-B</option>
+            <hr>
+            <option value="3"  style="color:black;font-weight:bold;">CLASS REPRESENTATIVES</option>
+            <hr>
+            <option value="10" style="color:black;font-weight:bold;">CIVIL-TOP-20</option>
+            <hr>
+            <option value="20"  style="color:black;font-weight:bold;">CIVIL-LAST-20</option>
+            <hr>
+            
+            <hr>
+        </select>
+        <br>
+        <br>
+        <input type="submit" style="border:2px solid black;padding:5px;border-radius:5px;" value="PROCEED WITH PROCESS"/>
+    </form>
+    </div>
+    {% endif %}
+
+    
+    {% if is_getmech1mails %}
+    <div class="getemails">
+    <h4>MECH YEAR-1 </h4>
+    <form action="/getmech1emailscat">
+        <h3 style="text-decoration:underline;">PLEASE SELECT CATEGEORY OF STUDENTS TO INTERACT WITH</h3>
+        <select style="padding:10px;color:color;cursor: pointer;" id="dsp" name="dsp" required>
+            <option value="">SELECT CATEGEORY</option>
+            <hr>
+            <option value="1" style="color:black;font-weight:bold;">MECH-A-B</option>
+            <hr>
+            <option value="2" style="color:black;font-weight:bold;">MECH-SECTION-A</option>
+            <hr>
+            <option value="4" style="color:black;font-weight:bold;">MECH-SECTION-B</option>
+            <hr>
+            <option value="3"  style="color:black;font-weight:bold;">CLASS REPRESENTATIVES</option>
+            <hr>
+            <option value="10" style="color:black;font-weight:bold;">MECH-TOP-20</option>
+            <hr>
+            <option value="20"  style="color:black;font-weight:bold;">MECH-LAST-20</option>
+            <hr>
+            
+            <hr>
+        </select>
+        <br>
+        <br>
+        <input type="submit" style="border:2px solid black;padding:5px;border-radius:5px;" value="PROCEED WITH PROCESS"/>
+    </form>
+    </div>
+    {% endif %}
+
+    {% if is_getcse1mails %}
+    <div class="getemails">
+    <h4>CSE YEAR-1 </h4>
+    <form action="/getcse1emailscat">
+        <h3 style="text-decoration:underline;">PLEASE SELECT CATEGEORY OF STUDENTS TO INTERACT WITH</h3>
+        <select style="padding:10px;color:color;cursor: pointer;" id="dsp" name="dsp" required>
+            <option value="">SELECT CATEGEORY</option>
+            <hr>
+            <option value="1" style="color:black;font-weight:bold;">CSE-A-B</option>
+            <hr>
+            <option value="2" style="color:black;font-weight:bold;">CSE-SECTION-A</option>
+            <hr>
+            <option value="4" style="color:black;font-weight:bold;">CSE-SECTION-B</option>
+            <hr>
+            <option value="3"  style="color:black;font-weight:bold;">CLASS REPRESENTATIVES</option>
+            <hr>
+            <option value="10" style="color:black;font-weight:bold;">CSE-TOP-20</option>
+            <hr>
+            <option value="20"  style="color:black;font-weight:bold;">CSE-LAST-20</option>
+            <hr>
+            
+            <hr>
+        </select>
+        <br>
+        <br>
+        <input type="submit" style="border:2px solid black;padding:5px;border-radius:5px;" value="PROCEED WITH PROCESS"/>
+    </form>
+    </div>
+    {% endif %}
+
+    {% if is_getds1emailscat %}
+    <div>
+        {% if top3ds1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top3ds1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in  top3ds1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if bottom10ds1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in bottom10dseresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in bottom10ds1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if top10ds1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top10dseresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in top10ds1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        
+        {% if ds1secaeresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in ds1secaeresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in ds1secaeresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        {% if ds1secberesults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in ds1secberesults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in ds1secberesults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        
+        {% if totalds1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in totalds1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in totalds1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+    </div>
+    {% endif %}
+
+    
+    {% if is_getcse1emailscat %}
+    <div>
+        {% if top3cse1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top3cse1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in  top3cse1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if bottom10cse1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in bottom10cse1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in bottom10cse1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if top10cse1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top10cse1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in top10cse1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        
+        {% if cse1secaeresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in cse1secaeresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in cse1secaeresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        {% if cse1secberesults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in cse1secberesults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in cse1secberesults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        
+        {% if totalcse1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in totalcse1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in totalcse1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+    </div>
+    {% endif %}
+    
+    
+    {% if is_getece1emailscat %}
+    <div>
+        {% if top3ece1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top3ece1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in  top3ece1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if bottom10ece1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in bottom10ece1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in bottom10ece1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if top10ece1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top10ece1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in top10ece1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        
+        {% if ece1secaeresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in ece1secaeresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in ece1secaeresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        {% if ece1secberesults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in ece1secberesults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in ece1secberesults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        
+        {% if totalece1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in totalece1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in totalece1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+    </div>
+    {% endif %}
+
+    
+    {% if is_getaiml1emailscat %}
+    <div>
+        {% if top3aiml1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top3aiml1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in  top3aiml1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if bottom10aiml1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in bottom10aimleresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in bottom10aiml1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if top10aiml1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top10aimleresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in top10aiml1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        
+        {% if aiml1secaeresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in aiml1secaeresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in aiml1secaeresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        {% if aiml1secberesults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in aiml1secberesults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in aiml1secberesults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        
+        {% if totalaiml1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in totalaiml1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in totalaiml1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+    </div>
+    {% endif %}
+
+
+    {% if is_getcivil1emailscat %}
+    <div>
+        {% if top3civil1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top3civil1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in  top3civil1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if bottom10civil1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in bottom10civileresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in bottom10civil1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if top10civil1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top10civileresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in top10civil1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        
+        {% if civil1secaeresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in civil1secaeresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in civil1secaeresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        {% if civil1secberesults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in civil1secberesults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in civil1secberesults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        
+        {% if totalcivil1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in totalcivil1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in totalcivil1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+    </div>
+    {% endif %}
+
+    
+    
+    {% if is_getmech1emailscat %}
+    <div>
+        {% if top3mech1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top3mech1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in  top3mech1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if bottom10mech1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in bottom10mecheresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in bottom10mech1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        {% if top10mech1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in top10mecheresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <a href="mailto:{% for result in top10mech1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+        </div>
+        {% endif %}
+
+        
+        {% if mech1secaeresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in mech1secaeresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in mech1secaeresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        {% if mech1secberesults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in mech1secberesults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in mech1secberesults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+        
+        {% if totalmech1eresults %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;text-align:center;">Name</th>
+                    <th style="border: 1px solid black;">Mobile Number</th>
+                    <th style="border: 1px solid black;text-align:center;">Department</th>
+                    <th style="border: 1px solid black;text-align:center;">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in totalmech1eresults %}
+                <tr>
+                    <td style="border: 1px solid black;">{{ result[0] }}</td>
+                    <td style="border: 1px solid black;">{{ result[1] }}</td>
+                    <td style="border: 1px solid black;">{{ result[2] }}</td>
+                    <td style="border: 1px solid black;"><a href="mailto:{{ result[3] }}">ContactMe</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+           
+            <a href="mailto:{% for result in totalmech1eresults %}{{ result[3] }}{% if not loop.last %},{% endif %}{% endfor %}">Send Email</a>
+
+        </div>
+        {% endif %}
+
+    </div>
+    {% endif %}
+
+
+</div>
+   
+</body>
+</html>
